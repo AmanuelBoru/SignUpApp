@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<section class="vh-100" style="background-color: #eee;">
+    <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-12 col-xl-11">
+                <div class="card text-black" style="border-radius: 25px;">
+                    <div class="card-body p-md-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                                <div class="text-center">
+                                    <h1 class="display-4">Welcome</h1>
+                                    <p>This is a straightforward Sign-In application that validates client input and stores the response in an in-memory database.</p>
+                                    <p>The application incorporates error handling to ensure that when an expected error occurs, it is managed and displayed correctly.</p>
+                                    <p>Furthermore, the application includes both client-side and server-side validation. Client-side validation is implemented using Data Annotations and 
+                                        the 'asp-validation-for' method, ensuring input is validated within the browser, thus preventing common mistakes before they occur. Data Annotations 
+                                        also provide server-side validation before data is inserted into the database. Additionally, server-side validation is performed on the email field 
+                                        to verify its uniqueness by querying the database.
+                                    </p><br /><br />
+                                    <p>Press navigate to the Sign Up page to add a user and Users page to see a list of users</p>
+                                    <p><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" asp-area="" asp-page="/SignUp">SIGN UP</a></p>
+                                    <p><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" asp-area="" asp-page="/Users">USERS</a></p>
+                                    
+                                    <p>Thank you for visiting this Application</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
